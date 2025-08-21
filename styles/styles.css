@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  padding: 20px;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.livro {
+  margin-bottom: 30px;
+}
+
+.livro h2 {
+  margin: 10px 0 5px;
+  color: #2c3e50;
+}
+
+.livro-img {
+  width: 100%;
+  max-width: 250px; /* reduzido */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* centraliza */
+}
+
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  margin-top: 5px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.checkbox-label {
+  display: block;
+  margin-top: 10px;
+  font-weight: normal;
+}
+
+.btn {
+  background-color: #25D366;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1ebe5d;
+}
+
+.preco {
+  font-weight: bold;
+  margin-top: 5px;
+  color: #27ae60;
+}
+
+.sucesso {
+  display: none;
+  color: green;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .livro-img {
+    margin-top: 10px;
+  }
+}
+

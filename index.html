@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Livros - Apóstolo Celson Moura</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Livros do Apóstolo Celson Moura</h1>
+
+    <div class="livro">
+      <img src="imagem.jpg/jornada-hebraicas.jpg" alt="Livro Jornada pelas Letras Hebraicas" class="livro-img" />
+      <h2>1. Jornada pelas Letras Hebraicas</h2>
+      <p>
+        Guia espiritual revelando o poder oculto das letras hebraicas e suas
+        tradições sagradas,cada letra é rica em significado simbólico e representa
+        uma tradição de sabedoria e espiritualidade. 
+      </p>
+      <p class="preco">R$ 50,00</p>
+    </div>
+
+    <div class="livro">
+      <img src="imagem.jpg/gestao-emocional.jpg" alt="Livro Mentoria em Gestão Emocional" class="livro-img" />
+      <h2>2. Mentoria em Gestão Emocional</h2>
+      <p>
+        Aprenda a gerenciar e equilibrar suas emoções e fortalecer seu espírito com
+        sabedoria e bem-estar geral. 
+      </p>
+      <p class="preco">R$ 50,00</p>
+    </div>
+
+    <form id="pedidoForm">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" required />
+
+      <label for="whatsapp">WhatsApp (com DDD):</label>
+      <input type="text" id="whatsapp" required />
+
+      <label>Quais livros deseja?</label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="livro1" value="Jornada pelas Letras Hebraicas" />
+        Jornada pelas Letras Hebraicas
+      </label>
+      <label class="checkbox-label">
+        <input type="checkbox" id="livro2" value="Mentoria em Gestão Emocional" />
+        Mentoria em Gestão Emocional
+      </label>
+
+      <button type="button" class="btn" onclick="enviarPedido()">
+        📲 Fazer Pedido via WhatsApp
+      </button>
+    </form>
+
+    <p id="mensagemSucesso" class="sucesso">✅ Pedido gerado com sucesso! Abrindo o WhatsApp...</p>
+
+</div>
+
+  <script src="javascript/script.js"></script>
+</body>
+</html>
